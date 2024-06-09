@@ -1,0 +1,196 @@
+*, *:before, *:after {
+    box-sizing: inherit; /* Inherit border-box model for all elements */
+}
+body, html{
+    width: 100%;
+    margin: 0; /* Ensure there is no default margin */
+    padding: 0; /* Ensure there is no default padding */
+    box-sizing: border-box;
+}
+p{
+    font-family: "Montserrat", sans-serif;
+}
+.container {
+    width: calc(100% - 64px); /* Account for the total margin (32px on each side) */
+    margin: auto;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center; /* Center the content */
+}
+/* Section 1 - css*/
+.talentconsulting-container{    
+    display: grid; 
+    grid-template-columns: 668px 1fr;
+    height: 715px;
+    grid-gap: 0;
+    
+    width: 100%;
+ 
+    padding-top: 20px;
+}  
+.talentconsulting-left{
+    width: 668px;
+    margin-right: 0;
+    
+}
+.talentconsulting-title{
+    height: 209px;
+    width: 100%;
+    background-color: rgba(130, 118, 254, 1); 
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title-talent{
+    font-family: "Montserrat", sans-serif; 
+    font-size: 48px;
+    color: rgba(247, 249, 249, 1);
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+    
+    position: absolute;
+    transition: opacity 1s;   
+}
+.title-talent.active{
+    opacity: 1;
+}
+
+.left-bottom{
+    height: 471px;
+    position: relative;
+}
+.talentconsulting-right{
+    height: 680px;
+    width: 100%;
+   background-color: black;
+    margin-right: 32px;
+    
+}
+.talentconsulting-right img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  
+}
+
+
+.number{
+    padding-top: 15px;
+}
+.num{
+    font-size: 20px;
+    color:rgba(197, 195, 195, 1);
+    font-weight: 300;
+    width: 12px;
+    height: 24px;
+    margin: 0;
+    margin-top: 12px;
+}
+.two{
+    font-size: 20px;
+    color: rgba(130, 118, 254, 1);
+    font-weight: 300;
+    margin: 0;
+    margin-top: 12px;
+    
+}
+.bottom-left{
+    display: grid;
+    grid-template-columns: 1fr 2.33fr;
+    
+}
+.arrow{
+    position: relative;
+}
+.image{
+    object-fit: cover;
+}
+.scroll{
+    position: absolute;
+    left: 4px;
+    width: 151px;
+    height: 151px;
+    top: 126px;
+    animation: rotate 5s linear infinite;
+    z-index: 1;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.vector{
+    position: absolute;
+   top: 173px;
+   left: 59px;
+    z-index: 2;
+}
+.text-and-button{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    
+}
+.text-box{
+    width: 364px;
+    height: 131px;
+    position: relative;
+    padding-left: 75px;
+    padding-top: 50px;
+    margin: 0;
+}
+.new-text{
+    font-family: "Oxygen", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(39, 39, 39, 1);
+    width: 364px;
+    height: 131px;
+}
+.learn-more-button {
+    padding-top: 50px;
+    padding-left: 75px;
+    position: absolute;
+    bottom: 0;
+}
+
+.learn-more {
+    width: 370px;
+    height: 73px;
+    border: none;
+    background-color: rgba(130, 118, 254, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    overflow: hidden;
+    border-radius: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.button-text {
+    color: rgba(247, 249, 249, 1);
+}
+
+.button-image {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.icon {
+    width: 39.5px;
+    height: 40px;
+}
+
+
+
+/*section 1 - CSS ENDS */
